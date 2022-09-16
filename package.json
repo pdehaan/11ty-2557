@@ -7,7 +7,10 @@
     "url": "https://github.com/pdehaan/11ty-2557/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "ajv": "^8.11.0",
+    "ajv-formats": "^2.1.1",
+    "dedent": "^0.7.0"
   },
   "homepage": "https://github.com/pdehaan/11ty-2557#readme",
   "keywords": [],
@@ -18,7 +21,9 @@
     "url": "git+https://github.com/pdehaan/11ty-2557.git"
   },
   "scripts": {
+    "prebuild": "rm -rf www",
     "build": "eleventy",
+    "postbuild": "npx prettier www --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
