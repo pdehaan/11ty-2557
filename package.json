@@ -1,0 +1,16 @@
+{
+  "name": "11ty-2257",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
